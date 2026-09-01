@@ -33,6 +33,10 @@ The system performs data preprocessing, feature engineering, predictive modeling
 6. AQI Prediction
 7. Data Visualization
 
+## Dataset
+
+A publicly available Kaggle air quality dataset was used during model development and testing. The dataset file is not available in the current repository.
+
 ## Future Improvements
 
 - Real-time AQI Monitoring
