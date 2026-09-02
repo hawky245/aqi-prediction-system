@@ -2,52 +2,64 @@
 
 ## Overview
 
-The AQI Prediction System is a Machine Learning project designed to analyze environmental parameters and predict Air Quality Index (AQI) levels.
+AQI Prediction System is a machine learning application that predicts future Air Quality Index (AQI) values using historical air quality data and Linear Regression.
 
-The system performs data preprocessing, feature engineering, predictive modeling, and visualization to help monitor pollution trends and improve environmental decision-making.
+The application provides AQI forecasting, visualization of future trends, and classification of predicted air quality levels.
 
 ## Features
 
-- Air Quality Data Analysis
-- Data Cleaning and Preprocessing
-- Feature Engineering
-- AQI Prediction using Machine Learning
-- Trend Visualization
-- Environmental Monitoring Dashboard
+- Future AQI prediction
+- Interactive Streamlit interface
+- AQI trend visualization
+- Air quality classification
+- Machine learning based forecasting
 
 ## Technologies Used
 
 - Python
+- Streamlit
 - Pandas
-- NumPy
 - Matplotlib
 - Scikit-Learn
 
-## Methodology
+## Machine Learning Model
 
-1. Data Collection
-2. Data Cleaning
-3. Feature Selection
-4. Model Training
-5. Model Evaluation
-6. AQI Prediction
-7. Data Visualization
+The project uses Linear Regression trained on:
 
-## Dataset
+- Day
+- Month
+- Year
 
-A publicly available Kaggle air quality dataset was used during model development and testing. The dataset file is not available in the current repository.
+to predict AQI values for future dates.
+
+## AQI Categories
+
+| AQI Range | Category |
+|------------|-----------|
+| 0-50 | Good |
+| 51-100 | Moderate |
+| 101-200 | Poor |
+| Above 200 | Severe |
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
 
 ## Future Improvements
 
-- Real-time AQI Monitoring
-- IoT Sensor Integration
-- Deep Learning Models
-- Web Dashboard Deployment
-## Screenshots
+- Random Forest Regression
+- XGBoost
+- LSTM Forecasting
+- Weather Parameter Integration
+- Multi-city Predictions
 
-### Dashboard
-
-![Dashboard](screenshots/main-window.png)
 ## Author
 
 Abhay Surya R
+
+## License
+
+MIT License
